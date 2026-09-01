@@ -1,4 +1,4 @@
-package Circle;
+package Circulo;
 
 public class Circulo {
     double raio;
