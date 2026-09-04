@@ -26,4 +26,9 @@ public class Empresa {
     public void addProjetos(Projeto p) {
         this.projetos.add(p);
     }
+
+    @Override
+    public String toString() {
+        return "A EMPRESA TEM UM GERENTE: "+getGerente()+" | PROJETOS DA EMPRESA: "+getProjetos();
+    }
 }

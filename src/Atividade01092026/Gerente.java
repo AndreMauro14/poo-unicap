@@ -3,7 +3,7 @@ package Atividade01092026;
 public class Gerente extends Funcionario{
     private String departamento;
 
-    public Gerente (String nome, String cpf, Float salario, String departamento){
+    public Gerente (String nome, String cpf, double salario, String departamento){
         super(nome,cpf,salario);
         this.departamento = departamento;
     }
@@ -13,5 +13,10 @@ public class Gerente extends Funcionario{
     }
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
+    }
+
+    @Override
+    public String toString(){
+        return super.getNome()+" | TRABALHA NO DEPARTAMENTO: "+getDepartamento();
     }
 }

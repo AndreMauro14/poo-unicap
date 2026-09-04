@@ -30,8 +30,12 @@ public class Projeto {
     public Desenvolvedor getDesenvolvedor() {
         return desenvolvedor;
     }
-
     public void setDesenvolvedor(Desenvolvedor desenvolvedor) {
         this.desenvolvedor = desenvolvedor;
+    }
+
+    @Override
+    public String toString(){
+        return "NOME DO PROJETO: "+nome+" | DESCRIÇÃO DO PROJETO: "+descricao+" | DESENVOLVEDOR DO PROJETO: "+desenvolvedor;
     }
 }

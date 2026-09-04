@@ -3,9 +3,9 @@ package Atividade01092026;
 public class Funcionario {
     private String nome;
     private String cpf;
-    private Float salario;
+    private Double salario;
 
-    public Funcionario (String nome, String cpf, Float salario){
+    public Funcionario (String nome, String cpf, Double salario){
         this.nome = nome;
         this.cpf = cpf;
         this.salario = salario;
@@ -23,11 +23,16 @@ public class Funcionario {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    public Float getSalario(){
+    public Double getSalario(){
         return salario;
     }
-    public void setSalario(Float salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    @Override
+    public String toString(){
+        return "Funcionario: "+getNome()+" | cpf: "+getCpf()+" salario: "+getSalario();
     }
 
 }
